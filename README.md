@@ -1,26 +1,28 @@
-# Geometry Dash Downloader ![AutoHotkey](https://img.shields.io/badge/Language-AutoHotkey-green.svg)
-**Geometry Dash Downloader** - A script for downloading Newgrounds banned songs.
+Geometry Dash Downloader: Grabbing Banned Beats! 🎶
+===================================================
 
-This is possible due to a known pattern in the audio link:
+Yo, music rebels! If you're here, you're probably tired of Newgrounds banning songs on Geometry Dash. Well, fret not, 'cause we got a slick Python script to help you out.
 
-`https://audio-download.ngfiles.com/(ID - Mod(ID/1000))/(ID)_(Modified name with limit of 26 characters).mp3`
+How It Works
+------------
 
-This pattern only works from ID No. 469775 onwards.
+We cracked the code, literally. The audio link follows this sweet pattern: `https://audio-download.ngfiles.com/(ID - Mod(ID/1000))/(ID)_(Modified name with limit of 26 characters).mp3`. Just remember, it kicks in from ID No. 469775 onwards. Anything before that is a no-go. If you're into the nitty-gritty math stuff, check out "[math.md](http://math.md)" in the repo. But hey, it's only for the hardcore math enthusiasts. This readme is all about vibes, not formalities!
 
-After entering the ID and the name of the audio, the download will start and the audio will be saved in the selected path.
+Shoutout to d4n3436 for the OG "GDDownloader." I just rolled it into Python because I heard AutoHotKey was catching some flak as malware.
 
-## Setup
+Usage
+-----
 
-[Download the script](https://raw.githubusercontent.com/Dan3436/gddownloader/master/gddownloader.ahk)
+1.  Install the goods: `pip install -r requirements.txt`.
+2.  Get your hands dirty:
+    *   For the command line bosses: `python gddownloadercli.py [song id] [song name in quotes] --save-path [custom path if you're feeling fancy]`.
+    *   Or for the chill vibes: `python gddownloadertui.py` (TUI menu for the win).
 
-or
+And yeah, I know the repo screams "PyQT" when it's just a CLI party. My bad. Too lazy to fix. It's not as slick as GD Song File Hub, but it gets the job done occasionally. Newgrounds might catch on, so use it wisely.
 
-[Download the compiled script](https://github.com/Dan3436/gddownloader/releases)
+Let's Connect
+-------------
 
-## Images
+Got issues? Hit up the Issues tab. Wanna drop some code? Send a Pull Request. Just wanna shoot the breeze? Find me on Scratch as DifferentDance8 or on Geometry Dash as JoshTheProtogen. Don't bother with Discord or Snapchat—those are VIP zones for real-life pals.
 
-![GD Downloader](https://i.imgur.com/T7lZkAe.png)
-
-![GD Downloader](https://i.imgur.com/4bm2IFM.png)
-
-Written in AutoHotkey.
+Rock on and keep those beats alive! 🤘✨
